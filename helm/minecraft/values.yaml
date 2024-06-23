@@ -18,8 +18,10 @@ volume:
 resources:
   limits:
     memory: 2Gi
+    cpu: "1"
   requests:
     memory: 1.5Gi
+    cpu: "0.5"
 
 serviceAccount:
   create: true
