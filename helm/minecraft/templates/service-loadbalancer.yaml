@@ -6,9 +6,8 @@ metadata:
   labels:
     app: minecraft-server
 spec:
-  type: NodePort
+  type: LoadBalancer
   ports:
     - port: {{ .Values.minecraft.port }}
-      nodePort: {{ .Values.minecraft.port }}
   selector:
     app: minecraft-server

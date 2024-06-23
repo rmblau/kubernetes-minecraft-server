@@ -4,7 +4,7 @@ metadata:
   name: minecraft-data-pvc
   namespace: minecraft
 spec:
-  storageClassName: {{ .Values.volume.class }}
+  storageClassName: {{ .Values.volume.storageClassName }}
   accessModes:
     - ReadWriteMany
   resources:

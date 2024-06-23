@@ -7,10 +7,13 @@ minecraft:
   gamemode: 'survival'
   motd: 'Your super-cool, super-kube, minecraft server' # Message of the Day
   port: 25565
+  image:
+    name: itzg/minecraft-server
+    tag: latest
 
 volume:
-  storage: 3Gi
-  class: 'longhorn'
+  storage: 10Gi
+  storageClassName: 'longhorn'
 
 resources:
   limits:
