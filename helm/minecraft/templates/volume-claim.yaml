@@ -4,9 +4,9 @@ metadata:
   name: minecraft-data-pvc
   namespace: minecraft
 spec:
-  storageClassName: local-storage
+  storageClassName: {{ .Values.volume.class }}
   accessModes:
-    - ReadWriteOnce
+    - ReadWriteMany
   resources:
     requests:
       storage: {{ .Values.volume.storage }}

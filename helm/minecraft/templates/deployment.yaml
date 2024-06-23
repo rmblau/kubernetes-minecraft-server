@@ -35,7 +35,7 @@ spec:
           - name: MOTD
             value: {{ .Values.minecraft.motd }}
           - name: ALLOW_FLIGHT
-            value: 'TRUE'
+            value: 'FALSE'
         ports:
         - containerPort: {{ .Values.minecraft.port }}
           name: minecraft
